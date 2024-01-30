@@ -1,0 +1,44 @@
+tipo any
+paradigmas de programaçao
+legibilidade
+consistencia
+testabilidade
+paradigma estruturado ou orientada a objeos
+
+ export class Guerreiro {
+    name:string;
+    tipo:string;
+    forca:number;
+    saude:number;
+
+    constructor(name:string, tipo:string, forca:number, saude:number){
+        this.name = name
+        this.tipo = tipo;
+        this.forca = forca;
+        this.saude = 100;
+    }
+    
+    atacar(): void {
+        console.log("Ola Monster");
+        
+    }
+
+    dano(): void {
+        console.log();
+        
+    }
+} 
+const newGuerreiro = new Guerreiro("mario", "aventureiro", 100, 100)
+
+attack(myMonster:Monster):void{
+    const damage = this.forca;
+    myMonster.receiveDamage(damage),
+    console.log(`${this.name} recebe ${damage} dano do guerreiro`);
+    
+    receiveDamage(damage:number): void{
+        this.life -= damage
+    }
+}
+
+info(): void {
+console.log(this.life);      para ver informaçoes
