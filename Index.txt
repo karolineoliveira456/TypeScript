@@ -1,0 +1,19 @@
+import { Animal } from "./Animal";
+import { Mammal } from "./Mammal";
+import { Bird } from "./Bird";
+
+
+const myAnimal = new Animal("ESTIMACAO", 10);
+console.log(myAnimal.getName()); 
+console.log(myAnimal.getWeight());
+myAnimal.setName("newName");
+myAnimal.setWeight(20); 
+myAnimal.emitSound(); 
+
+const myMammal = new Mammal("SAGUA", 5, "branca");
+console.log(myMammal.getCoat()); 
+myMammal.breastfeed(); 
+
+const myBird = new Bird("EVA", 3, "grande");
+
+

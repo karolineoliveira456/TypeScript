@@ -1,0 +1,19 @@
+import { Animal } from "./Animal";
+
+export class Bird extends Animal {
+
+    private wingspan:string;
+
+    constructor(name: string, weight: number, wingspan: string) {
+        super(name, weight);
+        this.wingspan = wingspan;
+    }
+
+    public fly(): void {
+        console.log(" A ave esta voando...");
+        
+    }
+
+}
+
+const novoBird = new Bird("animal tres", 10, "grande")
