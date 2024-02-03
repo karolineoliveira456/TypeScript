@@ -2,23 +2,31 @@
 
 export class Animal{
     private name:string
-    private idade:number
+    private weight:number
 
-    constructor(name:string, idade:number){
-        this.name = name
-        this.idade = idade
+    constructor(name:string, weight:number){
+        this.name = name;
+        this.weight = weight;
     }
 
-    public getName(){
-        return this.name
+    public getName(): string {
+        return this.name;
     }
 
-    public getIdade(){
-        return this.idade
+    public getWeight(): number {
+        return this.weight;
     }
 
-    public emitSound(){
-        console.log("SOM");
+    public setName(newName): string {
+        return this.name = newName;
+    }
+
+    public setWeight(newWeight): number {
+        return this.weight = newWeight;
+    }
+
+    public emitSound(): void {
+        console.log("SOM...");
         
     }
 }
