@@ -29,5 +29,5 @@ export class Animal {
     }
 }
 
-const novoAnimal = new Animal(" animal um ", 10)
+const novoAnimal = new Animal("animal um", 10)
 
