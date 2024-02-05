@@ -1,35 +1,19 @@
-"use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Bird = void 0;
-var Animal_1 = require("./Animal");
-var Bird = /** @class */ (function (_super) {
-    __extends(Bird, _super);
-    function Bird(name, weight, wingspan) {
-        var _this = _super.call(this, name, weight) || this;
-        _this.wingspan = wingspan;
-        return _this;
+import { Animal } from "./Animal";
+
+export class Bird extends Animal {
+
+    private wingspan:number
+
+    constructor(name: string, weight: number, wingspan: number) {
+        super(name, weight);
+        this.wingspan = wingspan;
     }
-    Bird.prototype.getWinspan = function () {
-        return this.wingspan;
-    };
-    Bird.prototype.fly = function () {
-        console.log("The bird is flying...");
-    };
-    return Bird;
-}(Animal_1.Animal));
-exports.Bird = Bird;
+
+    getWinspan(): number {
+        return this.wingspan
+    }
+
+    public fly(): void {
+        console.log("The bird is flying...");       
+    }
+}
