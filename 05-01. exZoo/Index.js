@@ -1,18 +1,21 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Animal_1 = require("./Animal");
-var Mammal_1 = require("./Mammal");
-var Bird_1 = require("./Bird");
-var myAnimal = new Animal_1.Animal("Pet", 10);
-console.log(myAnimal.getName());
+import { Animal } from "./Animal";
+import { Mammal } from "./Mammal";
+import { Bird } from "./Bird";
+
+
+const myAnimal = new Animal("Pet", 10);
+console.log(myAnimal.getName()); 
 console.log(myAnimal.getWeight());
+
 myAnimal.setName("Maria");
-myAnimal.setWeight(20);
-myAnimal.emitSound();
-var myMammal = new Mammal_1.Mammal("SAGUA", 5, "White");
+myAnimal.setWeight(20); 
+
+
+const myMammal = new Mammal("SAGUA", 5, "White");
 console.log(myMammal.getCoat());
-console.log(myMammal.setCoat("yellow"));
-myMammal.breastfeed();
-var newBird = new Bird_1.Bird("EVA", 3, 9);
+myMammal.emitSound(); 
+myMammal.breastfeed() 
+
+const newBird = new Bird("EVA", 3, 9);
 console.log(myMammal.getName());
 console.log(myMammal.getWeight());
