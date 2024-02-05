@@ -15,12 +15,12 @@ export class Animal {
         return this.weight;
     }
 
-    public setName(newName): string {
-        return this.name = newName;
+    public setName(name: string): void {
+         this.name = name;
     }
 
-    public setWeight(newWeight): number {
-        return this.weight = newWeight;
+    public setWeight(weight: number): void {
+         this.weight = weight;
     }
 
     public emitSound(): void {
@@ -28,6 +28,3 @@ export class Animal {
         
     }
 }
-
-const novoAnimal = new Animal("animal um", 10)
-
