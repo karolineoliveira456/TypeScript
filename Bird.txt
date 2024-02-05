@@ -10,7 +10,7 @@ export class Bird extends Animal {
     }
 
     public fly(): void {
-        console.log(" A ave esta voando...");
+        console.log("The bird is flying...");
         
     }
 
