@@ -1,26 +1,30 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Animal = void 0;
-var Animal = /** @class */ (function () {
-    function Animal(name, weight) {
+export class Animal {
+    private name:string
+    private weight:number
+
+    constructor(name:string, weight:number){
         this.name = name;
         this.weight = weight;
     }
-    Animal.prototype.getName = function () {
+
+    public getName(): string {
         return this.name;
-    };
-    Animal.prototype.getWeight = function () {
+    }
+
+    public getWeight(): number {
         return this.weight;
-    };
-    Animal.prototype.setName = function (name) {
-        this.name = name;
-    };
-    Animal.prototype.setWeight = function (weight) {
-        this.weight = weight;
-    };
-    Animal.prototype.emitSound = function () {
+    }
+
+    public setName(name: string): void {
+         this.name = name;
+    }
+
+    public setWeight(weight: number): void {
+         this.weight = weight;
+    }
+
+    public emitSound(): void {
         console.log("the animal is making a Sound...");
-    };
-    return Animal;
-}());
-exports.Animal = Animal;
+        
+    }
+}
