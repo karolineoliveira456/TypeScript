@@ -24,7 +24,7 @@ export class Animal {
     }
 
     public emitSound(): void {
-        console.log("SOM...");
+        console.log("the animal is making a Sound...");
         
     }
 }
