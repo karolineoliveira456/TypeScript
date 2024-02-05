@@ -14,7 +14,7 @@ export class Mammal extends Animal {
     }
 
     public breastfeed(): void {
-        console.log(`O mamifero esta amamentando...`);
+        console.log(`The mammal is breastfeeding...`);
     }
 }
 
